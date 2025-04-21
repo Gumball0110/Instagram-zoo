@@ -1,0 +1,440 @@
+/* 基本樣式重置 */
+body {
+    background-color: #fafafa;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #262626;
+  }
+  
+  /* 左側導航欄 */
+  .sidebar {
+    width: 220px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 24px 12px;
+    border-right: 1px solid #dbdbdb;
+    background-color: white;
+    z-index: 100;
+  }
+  
+  .sidebar h5 {
+    font-family: 'Lobster', cursive;
+    font-size: 24px;
+    margin-bottom: 28px;
+    margin-top: 8px;
+    font-weight: normal;
+  }
+  
+  .sidebar .nav-item {
+    margin-bottom: 16px;
+  }
+  
+  .sidebar .nav-link {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+  }
+  
+  .sidebar .nav-link:hover {
+    background-color: #f2f2f2;
+  }
+  
+  .sidebar .nav-link i {
+    margin-right: 16px;
+    font-size: 20px;
+  }
+  
+  /* 限時動態樣式 */
+  .story-section {
+    margin-bottom: 24px;;
+  }
+  
+  .story-item {
+    width: 80px;
+    cursor: pointer;
+  }
+  
+  .story-avatar-wrapper-close-friend{
+    width: 66px;
+    height: 66px;
+    padding: 2px;
+    background-color: #00C569;
+    border-radius: 50%;
+  }
+
+  .story-avatar-wrapper {
+    width: 66px;
+    height: 66px;
+    padding: 2px;
+    background: linear-gradient(45deg, #fcd319, #ffb030, #d95c14, #cc2366, #bc1888);
+    border-radius: 50%;
+  }
+
+  
+  .story-avatar {
+    border: 3px solid white;
+    box-sizing: border-box;
+  }
+  
+  /* 隱藏捲軸但保留功能 */
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  /* 貼文樣式 */
+  .post {
+    border: 1px solid #dbdbdb;
+    border-radius: 8px;
+    margin-bottom: 24px;
+  }
+  
+  .post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 16px;
+  }
+  
+  .post-user {
+    display: flex;
+    align-items: center;
+  }
+  
+  .post-user img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 12px;
+    object-fit: cover;
+  }
+  
+  .post-user-name {
+    font-weight: 600;
+    font-size: 14px;
+  }
+  
+  .post-time {
+    font-size: 12px;
+    color: #8e8e8e;
+    margin-left: 8px;
+  }
+  
+  .post-image {
+    width: 100%;
+    max-height: 600px;
+    object-fit: contain;
+  }
+  
+  .post-actions {
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .post-action-icon {
+    margin-right: 16px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .post-likes {
+    font-weight: 600;
+    font-size: 14px;
+    margin: 4px 16px;
+  }
+  
+  .post-caption {
+    padding: 0 16px 8px 16px;
+    font-size: 14px;
+  }
+  
+  .post-comments-link {
+    color: #8e8e8e;
+    font-size: 14px;
+    padding: 0 16px 16px 16px;
+    cursor: pointer;
+  }
+  
+  /* 右側推薦欄 */
+  .suggested {
+    position: fixed;
+    top: 90px;
+    width: 300px;
+    padding: 8px;
+  }
+  
+  .suggested .user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  
+  .suggested .user-info img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    margin-right: 12px;
+    object-fit: cover;
+  }
+  
+  .suggested .username {
+    font-weight: 600;
+    font-size: 14px;
+  }
+  
+  .suggested .subtext {
+    font-size: 14px;
+    color: #8e8e8e;
+  }
+  
+  .suggested .suggestion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  
+  .suggested .suggestion-header .subtext {
+    font-weight: 600;
+  }
+  
+  .suggested .see-all {
+    font-size: 12px;
+    font-weight: 600;
+    color: #262626;
+    text-decoration: none;
+  }
+  
+  .suggestion-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .suggestion-item .user {
+    display: flex;
+    align-items: center;
+  }
+  
+  .suggestion-item img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 12px;
+    object-fit: cover;
+  }
+  
+  .follow-link {
+    color: #0095f6;
+    font-weight: 600;
+    font-size: 12px;
+    text-decoration: none;
+  }
+  
+  .switch-link {
+    color: #0095f6;
+    font-weight: 600;
+    font-size: 12px;
+    text-decoration: none;
+  }
+  
+  /* 藍勾勾驗證圖示 */
+  .verified-icon {
+    width: 12px;
+    height: 12px;
+    margin-left: 4px;
+  }
+  
+  /* 主要內容區塊 */
+  .main-container {
+    display: flex;
+    max-width: 975px;
+    margin: 0 auto;
+    padding-top: 60px; 
+  }
+  
+  .main-content {
+    margin-left: 240px;
+    max-width: 630px;
+    width: 100%;
+    padding: 0 16px;
+  }
+  
+  /* 頂部導航欄 */
+  .top-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color: white;
+    border-bottom: 1px solid #dbdbdb;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-family: 'Lobster', cursive;
+    font-size: 24px;
+    font-weight: normal;
+    margin-right: 24px;
+  }
+  
+  .search-box {
+    position: relative;
+    width: 250px;
+  }
+  
+  .search-box input {
+    width: 100%;
+    padding: 10px 16px;
+    background-color: #efefef;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+  
+  .search-box i {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #8e8e8e;
+  }
+  
+  /* 修改主要容器結構 */
+.main-container {
+    display: flex;
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding-top: 30px;
+    position: relative; 
+  }
+  
+  /* 調整右側推薦欄 */
+  .suggested {
+    position: sticky; 
+    top: 90px;
+    width: 300px;
+    padding: 8px;
+    margin-left: 80px; 
+  }
+  
+  /* 調整中間內容區 */
+  .main-content {
+    margin-left: 240px;
+    max-width: 600px; /* 控制中間內容寬度 */
+    width: 100%;
+    padding: 0 16px;
+  }
+  
+  /* 確保三欄的容器正確顯示 */
+  .container-fluid {
+    padding: 0;
+    max-width: 100%;
+  }
+  
+  /* 媒體查詢調整 */
+  @media (max-width: 1200px) {
+    .suggested {
+      display: none; 
+    }
+    
+    .main-content {
+      margin: 0 auto; 
+    }
+  }
+
+  /* 響應式調整 */
+  @media (max-width: 1024px) {
+    .suggested {
+      display: none;
+    }
+    
+    .main-content {
+      margin-left: 240px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .sidebar {
+      display: none;
+    }
+    
+    .main-content {
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0;
+    }
+    
+    .story-section {
+      margin-left: 0;
+    }
+  }
+
+  .verified-icon {
+    width: 14px !important;    
+    height: 14px !important;
+    vertical-align: middle; 
+    margin-left: 4px;       
+  }
+
+  .story-modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.85);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .story-modal img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 15px;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+  }
+  
+
+  
+  .badge-notification {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    background-color: red;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 4px 5px;
+    border-radius: 50%;
+    line-height: 1;
+    min-width: 18px;
+    text-align: center;
+  }
+  
+  
